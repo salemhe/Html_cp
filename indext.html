@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>SalemPortfolio</title>
 </head>
 <body>
     
     <!--this is my nav section-->
-    <header >
-            <img src="logo11.jpg" alt="logo" width="120px" height="60px">
+    <header>
+            
             <nav>
+                <div class="logo">
+                    <img src="logo11.jpg" alt="logo" width="120px" height="60px">
+                </div>
+                
                 <ul>
                     <a href="indext.html"><li>HOME</li></a>
                     <a href="about-section"><li>ABOUT</li></a>
@@ -28,7 +33,7 @@
             <h1>Hi, i'm Salem Hamis</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam mollitia voluptas quod adipisci sunt cumque.</p>
             <button>Let's Get Started</button> 
-            </div> 
+        </div> 
             
             <div class="image_hero">
                 <img src="mypicture.jpg" alt="my picture" width="200px;" height="200px">
@@ -52,84 +57,98 @@
 
         <!--this is my resume section-->
         <section id="resume-section">
-            <h4>Resume</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quaerat!</p>
-            <table border="1">
-                <tr>
-                <th>FRONT-END</th>
-                <th>BACK-END</th>
-                <th>DATABASE</th>
-                </tr>
-                <tr>
-                <td>HTML</td>
-                <td>NODE</td>
-                <td>MYSQL</td>
-                </tr>
-                <tr>
-                <td>CSS</td>
-                <td>C++</td>
-                <td>NOSQL</td>
-                </tr>
-                <tr>
-                    <td>JS</td>
-                    <td>PHYTON</td>
-                    <td>MONGODB</td>
-                </tr>
+            <div class="work_heading">
+                <h1>Resume</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quos hic placeat libero omnis nemo culpa corporis, incidunt nihil voluptas aut obcaecati? Nobis, quas!</p>
+            </div>
+            
+            <table title="resume" border="4">
+                <tbody>
+                    <tr>
+                        <th>FRONT-END</th>
+                        <th>BACK-END</th>
+                        <th>DATABASE</th>
+                        </tr>
+                        <tr>
+                        <td>HTML</td>
+                        <td>NODE</td>
+                        <td>MYSQL</td>
+                        </tr>
+                        <tr>
+                        <td>CSS</td>
+                        <td>C++</td>
+                        <td>NOSQL</td>
+                        </tr>
+                        <tr>
+                            <td>JS</td>
+                            <td>PHYTON</td>
+                            <td>MONGODB</td>
+                        </tr>
+                </tbody>
             </table>
         </section>
 
         <!--this is my work section-->
         <section id="work-section">
-            <h4>list of what i do</h4>
-            <ol>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
-        </ol>
-
+            <div class="work-section-image">
+                <img src="mypicture.jpg" alt="potriate image" height="200px" width="200px">
+            </div>
+            <div class="work-section-text">
+                <h3> MY WORK</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas commodi, vitae eligendi modi maxime iure Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus delectus dolores aliquam libero.<br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, suscipit! dicta laudantium natus mollitia aliquam enim, amet, ab unde ipsam.</p>
+                <button>Get to know Me</button>
+            </div>
+            <div  class="work-section-skill">
+                <p>HTML</p>
+                <div class="work-section-skill-bar">
+                    <div class="work-section-skill-bar-fill html"></div>
+                </div>
+                <p>CSS</p>
+                <div class="work-section-skill-bar">
+                    <div class="work-section-skill-bar-fill css"></div>
+                </div>
+                <p>JS</p>
+                <div class="work-section-skill-bar">
+                    <div class="work-section-skill-bar-fill js"></div>
+                </div>
+            </div>
         </section>
-        
-        <!--this is my contact section-->
-        <section id="Contact-section">
+
+        <!--this is my contact me section-->
+        <div class="form-container">
+            <h2>Tell Me What You Want</h2> 
             <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-                <h3>Contact us</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, illo?</p>
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="full name"><br><br>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="example@gmail.com"> <br><br>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
 
-                <label>Password</label>
-                <input type="password" name="password"> <br><br>
-        
-                <label for="message">send message</label>
-                <textarea id="message" name="message" rows="3" required></textarea> <br><br>
-
-                <label>Gender:</label>
-                <select name="Gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-
-                <br>
-                <input type="radio" name="Gender">Male
-                <input type="radio" name="Gender">Female <br><br>
-        
-                <input type="submit" value="Submit">
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
             </form>
-        </section>
+        </div>
 
         <section>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/RjATm12qJaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
-
-            <audio controls>
-                <source src="Nathaniel-Bassey-Hallelujah-Eh-[TrendyBeatz.com].mp3">
-            </audio>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RjATm12qJaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
+            </div>
+            <div class="audio">
+                <audio controls>
+                    <source src="I love You Now and Always - LoveWorld Lyrics.mp3">
+                </audio>
+            </div>  
         </section>
     </main>
 
